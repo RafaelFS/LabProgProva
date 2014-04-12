@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1395117197 source:f:\dropbox\poli\lab prog\labprogprova\arvores.c
+	<stdio.h>
+	<malloc.h>
+	"arvores.h"
+
+1395116647 f:\dropbox\poli\lab prog\labprogprova\arvores.h
+	<stdio.h>
+
+1397331540 source:f:\dropbox\poli\lab prog\labprogprova\main.c
+	<stdio.h>
+
+1397331344 source:f:\dropbox\poli\lab prog\labprogprova\q1.c
+	<stdio.h>
+	"arvores.h"
+
