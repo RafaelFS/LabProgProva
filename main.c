@@ -14,7 +14,7 @@ int main(){
     criaNUSParvore();
 
 
-    printf("Questao 2, impressao da lista: \n \n");
+    printf("\nQuestao 2, mediana da lista: \n \n");
     Lista L1, L2;
     inicializalista(&L1);
     inicializalista(&L2);
@@ -26,9 +26,8 @@ int main(){
     adiciona(11, &L2);
     adiciona(12, &L2);
     adiciona(13, &L2);
-    imprimelista(&L1);
-    imprimelista(&L2);
     printf("mediana: %f \n", devolvemediana(L1, L2));
+
 
     return 0;
 }
