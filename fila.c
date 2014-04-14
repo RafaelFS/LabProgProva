@@ -40,7 +40,7 @@ void InsereFila(TipoDoElemento x, Fila *pF){
 void RemoveFila(Fila *pF){
     if(pF->vazia == 1 ) {
         Underflow();
-        exit(1) ;
+     //   exit(1) ;
     }
     else {
         pF->inicio = (pF->inicio + 1) % MAX;

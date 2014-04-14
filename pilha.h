@@ -10,7 +10,7 @@ Arquivo cabeçalho correspondente à biblioteca pilha.c
 #ifndef H_PILHA
 #define H_PILHA
 #define MAX 100
-typedef char TipoDoElemento;
+typedef int TipoDoElemento;
 
 typedef struct _Pilha {
     int topo;                      /* topo = -1, se a pilha está vazia */

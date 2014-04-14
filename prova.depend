@@ -26,11 +26,12 @@
 	<stdio.h>
 	"arvores.h"
 
-1397481072 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\main.c
+1397483726 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\main.c
 	<stdio.h>
 	"arvores.h"
 	"q1.h"
 	"q2.h"
+	"q3.h"
 
 1397476449 d:\nuvem\dropbox\poli\lab prog\labprogprova\q1.h
 	<stdio.h>
@@ -46,4 +47,28 @@
 1397481046 d:\nuvem\dropbox\poli\lab prog\labprogprova\q2.h
 	<stdio.h>
 	"lista.h"
+
+1397482232 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\fila.c
+	<stdio.h>
+	"fila.h"
+
+1390827112 d:\nuvem\dropbox\poli\lab prog\labprogprova\fila.h
+	<stdio.h>
+
+1397482658 d:\nuvem\dropbox\poli\lab prog\labprogprova\q3.h
+	<stdio.h>
+	"pilha.h"
+	"fila.h"
+
+1397482617 d:\nuvem\dropbox\poli\lab prog\labprogprova\pilha.h
+	<stdio.h>
+
+1390215892 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\pilha.c
+	<stdio.h>
+	"pilha.h"
+
+1397484605 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\q3.c
+	<stdio.h>
+	"pilha.h"
+	"fila.h"
 
