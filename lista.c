@@ -13,7 +13,7 @@ typedef struct _Lista {
 } Lista;
 
 // Faz com que a lista L seja uma lista vazia (n = 0)
-void inicializa(Lista *l) {
+void inicializalista(Lista *l) {
   l->comp = 0;
 }
 
@@ -135,87 +135,4 @@ void imprime(Lista *l){
         printf("%d ", acessa(i, l));
     }
 
-}
-
-int main(){
-    //Crio uma lista inicial com 10 elementos
-    int i;
-    TipoDaPosicao p, q, aux;
-    Lista L;
-    Lista * Lp;
-    Lp = &L;
-
-    inicializa(Lp);
-    adiciona(5, Lp);
-    adiciona(5, Lp);
-    adiciona(5, Lp);
-    adiciona(6, Lp);
-    adiciona(6, Lp);
-    adiciona(77, Lp);
-    adiciona(77, Lp);
-    adiciona(77, Lp);
-    adiciona(13, Lp);
-    adiciona(13, Lp);
-    adiciona(5, Lp);
-    adiciona(5, Lp);
-    adiciona(77, Lp);
-    adiciona(123, Lp);
-    adiciona(75, Lp);
-    adiciona(54, Lp);
-    adiciona(32, Lp);
-    adiciona(6522, Lp);
-    printf("\n original: ");
-    imprime(Lp);
-    /*
-    Exemplo de código cliente (veja como ele é construído usando somente as
-    rotinas descritas acima): eliminar duplicatas de uma lista com as operações
-    acima
-    */
-    p = primeiro(Lp);
-    while(p != FIM){
-        q = proximo(p, Lp);
-        while(q != FIM){
-            if(acessa(p, Lp) == acessa(q, Lp)){
-                aux = proximo(q, Lp);
-
-                remova(q, Lp);
-                if(aux == FIM){
-                     q = FIM;
-                }
-            }
-            else{
-                q = proximo(q, Lp);
-            }
-        }
-        p = proximo(p, Lp);
-    }
-    printf("\n duplicadas eliminadas: ");
-    imprime(Lp);
-
-
-    /*Desafio: código do cliente que imprime uma lista invertida.*/
-    TipoDoElemento elemfinal, eleminicial;
-    int tamanho;
-    p = primeiro(Lp);
-    q = proximo(p, Lp);
-    if(q != FIM){
-        while(proximo(q, Lp) != FIM){
-            q++;
-        }
-    }
-    tamanho = q;
-    for(i=p; i<=tamanho/2;  i++){
-        eleminicial = acessa(p, Lp);
-        elemfinal =  acessa(q, Lp);
-        remova(p, Lp);
-        insere(elemfinal, p, Lp);
-        remova(q, Lp);
-        insere(eleminicial, q, Lp);
-        p++;
-        q--;
-    }
-
-    printf("\n invertida: ");
-    imprime(Lp);
-    return 0;
 }

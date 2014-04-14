@@ -12,7 +12,8 @@ typedef struct _Lista {
   TipoDoElemento elementos[MAX];
 } Lista;
 
-void inicializa(Lista *l);
+void inicializalista(Lista *l);
 TipoDoElemento acessa(TipoDaPosicao p, Lista *l);
+int adiciona(TipoDoElemento x, Lista *l);
 
 #endif /** LISTA_H */
