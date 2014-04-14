@@ -9,6 +9,7 @@ Programa que implementa as funções referentes
 #include "q1.h"
 #include "q2.h"
 #include "q3.h"
+#include "q4.h"
 
 int main(){
     printf("Questao 1, impressao da arvore: \n \n");
@@ -45,6 +46,27 @@ int main(){
         printf("%d ", fila1.elementos[i]);
     }
 
-
+    Pilha pilha2;
+    Pilha pilha3;
+    int temp;
+    limpa(&pilha2);
+    limpa(&pilha3);
+    empilha(15, &pilha2);
+    empilha(14, &pilha2);
+    empilha(13, &pilha2);
+    empilha(12, &pilha2);
+    empilha(11, &pilha2);
+    empilha(5, &pilha3);
+    empilha(4, &pilha3);
+    empilha(3, &pilha3);
+    empilha(2, &pilha3);
+    empilha(1, &pilha3);
+    uniaodepilhas(&pilha2, &pilha3);
+    printf("\n\nQuestao 4, pilha resultante: \n");
+    while(ehvazia(&pilha3) != 1){
+        desempilha(&temp, &pilha3);
+        printf("%d ", temp);
+    }
+    puts("");
     return 0;
 }

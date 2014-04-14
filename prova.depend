@@ -26,7 +26,7 @@
 	<stdio.h>
 	"arvores.h"
 
-1397483726 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\main.c
+1397492666 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\main.c
 	<stdio.h>
 	"arvores.h"
 	"q1.h"
@@ -71,4 +71,8 @@
 	<stdio.h>
 	"pilha.h"
 	"fila.h"
+
+1397492160 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\q4.c
+	<stdio.h>
+	"pilha.h"
 
