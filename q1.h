@@ -8,9 +8,9 @@ Arquivo cabeçalho correspondente à biblioteca q1.c
 */
 
 #include <stdio.h>
-#ifndef H_ARVORES
-#define H_ARVORES
+#ifndef H_Q1
+#define H_Q1
 
 void criaNUSParvore();
 
-#endif // H_ARVORES
+#endif // H_Q1

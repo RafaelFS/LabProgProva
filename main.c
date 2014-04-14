@@ -5,7 +5,8 @@ Programa que implementa as funções referentes
 às questões da prova.
 */
 #include <stdio.h>
-
+#include "arvores.h"
+#include "q1.h"
 
 int main(){
     printf("Questao 1, impressao da arvore: \n \n");

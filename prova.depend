@@ -14,3 +14,23 @@
 	<stdio.h>
 	"arvores.h"
 
+1395117197 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\arvores.c
+	<stdio.h>
+	<malloc.h>
+	"arvores.h"
+
+1395116647 d:\nuvem\dropbox\poli\lab prog\labprogprova\arvores.h
+	<stdio.h>
+
+1397476243 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\q1.c
+	<stdio.h>
+	"arvores.h"
+
+1397476413 source:d:\nuvem\dropbox\poli\lab prog\labprogprova\main.c
+	<stdio.h>
+	"arvores.h"
+	"q1.h"
+
+1397476449 d:\nuvem\dropbox\poli\lab prog\labprogprova\q1.h
+	<stdio.h>
+
