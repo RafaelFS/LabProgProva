@@ -1,0 +1,10 @@
+ Resposta:
+
+Cada tipo de solução apresentada possui suas vantagens e desvantagens.
+
+Caso o número de colisões esperadas seja pequeno, colocar sequencialmente os elementos 
+na tabela de colisão é mais vantajoso, pois inserir e encontrar os elementos serão
+operações muito rápidas. Conforme o número de elemento colididos aumenta, porém, a busca de
+elemento na tabela de sobrecarga passa a ser cada vez mais lenta. Aí se torna vantajoso usar
+uma outra tabela de hashing como tabela de sobrecarga, pois a inserção dos elementos será mais 
+demorada mas a busca se tornará muitas vezes mais rápida.
