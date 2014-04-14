@@ -6,6 +6,7 @@ fila.c
 Biblioteca que implementa as operações báscias sobre uma fila.
 */
 
+#include <stdlib.h>
 #include <stdio.h>
 #include "fila.h"
 
@@ -40,7 +41,7 @@ void InsereFila(TipoDoElemento x, Fila *pF){
 void RemoveFila(Fila *pF){
     if(pF->vazia == 1 ) {
         Underflow();
-     //   exit(1) ;
+        exit(1) ;
     }
     else {
         pF->inicio = (pF->inicio + 1) % MAX;

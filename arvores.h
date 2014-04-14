@@ -21,7 +21,7 @@ typedef struct _No {
 } No;
 
 //Função que recebe a raiz de um árvore e a inicializa valores nulos para informação e nós filhos.
-void inicializa(No** T);
+void inicializaarvore(No** T);
 
 //Recebe a árvore T e devolve sua raiz.
 No raiz(No *T);
@@ -47,5 +47,9 @@ void emordem(No* T);
 
 //Imprime a arvore na forma pos-ordem
 void posordem(No* T);
+
+/* Esta rotina e adequada para imprimir arvores com chaves de */
+/* comprimento maximo igual a 6. */
+void imprime(No *raiz, int nivel);
 
 #endif // H_ARVORES

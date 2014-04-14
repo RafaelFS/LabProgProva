@@ -15,7 +15,7 @@ void criaNUSParvore(){
     int nusp[7] = {6, 4, 8, 0, 5, 9, 7};
     int i;
     No* arvore;
-    inicializa(&arvore);
+    inicializaarvore(&arvore);
     for(i=0; i< 7; i++){
         insere(&arvore, nusp[i]);
     }

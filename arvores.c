@@ -11,7 +11,7 @@ Biblioteca que implementa as operações básicas sobre uma árvore binária.
 #include "arvores.h"
 
 //Função que recebe a raiz de um árvore e a inicializa valores nulos para informação e nós filhos.
-void inicializa(No** T){
+void inicializaarvore(No** T){
     *T = NULL;
 }
 

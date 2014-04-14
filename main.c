@@ -10,6 +10,7 @@ Programa que implementa as funções referentes
 #include "q2.h"
 #include "q3.h"
 #include "q4.h"
+#include "q6.h"
 
 int main(){
     printf("Questao 1, impressao da arvore: \n \n");
@@ -68,5 +69,25 @@ int main(){
         printf("%d ", temp);
     }
     puts("");
+
+
+    No* arvore1;
+    inicializaarvore(&arvore1);
+    insere(&arvore1, 10);
+    insere(&arvore1, 1);
+    insere(&arvore1, 4);
+    insere(&arvore1, 5);
+    insere(&arvore1, 6);
+    insere(&arvore1, 13);
+    insere(&arvore1, 16);
+    insere(&arvore1, 20);
+    insere(&arvore1, 32);
+    insere(&arvore1, 14);
+    insere(&arvore1, 2);
+    insere(&arvore1, 12);
+    insere(&arvore1, 36);
+    puts("");
+    printf("Questao 5, teste com arvore de 13 elementos \n");
+    printf("numero de folhas = %d \n", numerodefolhas(arvore1));
     return 0;
 }

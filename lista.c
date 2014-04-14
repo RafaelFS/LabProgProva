@@ -1,6 +1,8 @@
 /* Rafael Freitas da Silva NUSP 6480585 */
 /* Biblioteca com funções básicas que são utilizadas para  */
 
+#include <stdio.h>
+
 //Definindo a estrutura de uma lista
 #define FIM -1
 #define MAX 100
