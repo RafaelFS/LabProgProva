@@ -81,7 +81,7 @@ TipoDaPosicao proximo(TipoDaPosicao p, Lista *l){
     L := a1, a2, ... , an , após a inserção temos
     L := a1, a2, ... , a(p-1), x, ap, ... , an.
     Se na lista L não existe a posição p o resultado é indefinido */
-void insere(TipoDoElemento x, TipoDaPosicao p, Lista *l){
+void inserelista(TipoDoElemento x, TipoDaPosicao p, Lista *l){
     TipoDaPosicao i;
     TipoDoElemento atual;
     TipoDoElemento prox;
@@ -128,7 +128,7 @@ int comprimento(Lista *l){
 
 
 // Imprime em ordem os elementos de L.
-void imprime(Lista *l){
+void imprimelista(Lista *l){
     int i;
 
     for(i = 1; i <= l->comp; i++){
