@@ -11,12 +11,14 @@ Programa que implementa as funções referentes
 #include "q3.h"
 #include "q4.h"
 #include "q6.h"
+#include "q7.h"
 
 int main(){
+    //Codigo Questão 1
     printf("Questao 1, impressao da arvore: \n \n");
     criaNUSParvore();
 
-
+    //Codigo Questão 2
     printf("\nQuestao 2, mediana da lista: \n");
     Lista L1, L2;
     inicializalista(&L1);
@@ -31,6 +33,7 @@ int main(){
     adiciona(13, &L2);
     printf("mediana: %f \n", devolvemediana(L1, L2));
 
+    //Codigo Questão 3
     Fila fila1;
     Pilha pilha1;
     limpa(&pilha1);
@@ -47,6 +50,7 @@ int main(){
         printf("%d ", fila1.elementos[i]);
     }
 
+    //Codigo Questão 4
     Pilha pilha2;
     Pilha pilha3;
     int temp;
@@ -70,7 +74,7 @@ int main(){
     }
     puts("");
 
-
+    //Codigo Questão 6
     No* arvore1;
     inicializaarvore(&arvore1);
     insere(&arvore1, 10);
@@ -87,7 +91,37 @@ int main(){
     insere(&arvore1, 12);
     insere(&arvore1, 36);
     puts("");
-    printf("Questao 5, teste com arvore de 13 elementos \n");
+    printf("Questao 6, teste com arvore de 13 elementos \n");
     printf("numero de folhas = %d \n", numerodefolhas(arvore1));
+
+    //Codigo Questão 7
+    No* arvore2;
+    No* arvore3;
+    inicializaarvore(&arvore2);
+    inicializaarvore(&arvore3);
+    insere(&arvore2, 2000);
+    insere(&arvore2, 321);
+    insere(&arvore2, 321);
+    insere(&arvore2, 2131);
+    insere(&arvore2, 6132);
+    insere(&arvore2, 342);
+    insere(&arvore2, 98);
+    insere(&arvore2, 76);
+    insere(&arvore2, 74);
+    insere(&arvore2, 4132);
+    insere(&arvore2, 132);
+    insere(&arvore2, 1443);
+    insere(&arvore2, 3342);
+    copiaarvore(&arvore2, &arvore3);
+    printf("Questao 7, impressao da arvore original e da copiada para verificar se sao iguais \n");
+    puts("Original: ");
+    imprime(arvore2, 6);
+    puts("");
+    puts("Copia: ");
+    imprime(arvore3, 6);
+
+    //Codigo Questão 8
+
+
     return 0;
 }
