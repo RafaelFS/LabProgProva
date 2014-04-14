@@ -15,5 +15,6 @@ typedef struct _Lista {
 void inicializalista(Lista *l);
 TipoDoElemento acessa(TipoDaPosicao p, Lista *l);
 int adiciona(TipoDoElemento x, Lista *l);
+void imprime(Lista *l);
 
 #endif /** LISTA_H */
